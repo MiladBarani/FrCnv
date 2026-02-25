@@ -1,0 +1,13 @@
+[project]
+name = "data-format-converter"
+version = "0.1.0"
+description = "Universal Data Format Conversion Framework"
+authors = [{ name="Milad Jafari" }]
+dependencies = [
+    "pandas",
+    "pyreadr",
+    "typer"
+]
+
+[project.scripts]
+dfc = "cli:app"
