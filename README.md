@@ -52,3 +52,44 @@ FrCnv/
 
 └── LICENSE
 
+---
+
+## 🧠 Architecture Overview
+
+FrCnv follows a layered architecture:
+
+### 1️⃣ Core Engine
+`data_converter/core.py`
+
+Handles conversion logic independently of the user interface.
+
+### 2️⃣ Format Handlers
+`data_converter/formats/`
+
+Each file format implements a handler derived from `BaseFormatHandler`.
+
+To add a new format:
+- Create a new handler class
+- Implement `read()` and `write()` methods
+- Register it in `registry.py`
+
+No changes to the core logic are required.
+
+### 3️⃣ Interface Layer
+
+- `cli.py` — Command-line interface using Typer
+- `gui.py` — Graphical interface using Tkinter
+
+Both interfaces call the same conversion engine.
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/MiladBarani/FrCnv.git
+cd FrCnv
+
+
