@@ -24,17 +24,31 @@ The architecture is designed to make it easy to add new formats with minimal cha
 ## 🏗 Project Structure
 
 FrCnv/
+
 ├── data_converter/
+
 │ ├── core.py
+
 │ ├── registry.py
+
 │ └── formats/
+
 │ ├── base.py
+
 │ ├── rda.py
+
 │ └── csv.py
 ├── cli.py
+
 ├── gui.py
+
 ├── requirements.txt
+
 ├── pyproject.toml
+
 ├── .gitignore
+
 ├── README.md
+
 └── LICENSE
+
